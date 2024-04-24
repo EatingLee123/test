@@ -11,7 +11,13 @@ import requests
 import json
 import time
 
-from Test.getEncryptedPassword import get_encrypted_password
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+
+from getEncryptedPassword import get_encrypted_password
+
 
 cloud_api = 'https://purangcloud-api.purang.com'
 referer = 'https://pch5-front.purang.com/'
